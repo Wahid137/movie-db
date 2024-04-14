@@ -11,7 +11,6 @@ export async function GET(_request, { params }) {
 }
 
 export async function PATCH(request, { params }) {
-    console.log(params)
     const movie = await request.json();
     const movieId = params.id;
     const movieIndex = movieList?.results?.findIndex(
